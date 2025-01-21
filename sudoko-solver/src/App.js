@@ -11,7 +11,7 @@ const SudokuSolver = () => {
     const newSudoku = [...sudoku];
     newSudoku[row] = [...newSudoku[row]]; // Ensure deep copy of the row
 
-    if (value === "" || value === "0") {
+    if (value === "" || value === "0") {  
       newSudoku[row][col] = 0; // Treat empty cells as 0
     } else if (!isNaN(value) && value >= 1 && value <= 9) {
       newSudoku[row][col] = parseInt(value); // Convert to number
