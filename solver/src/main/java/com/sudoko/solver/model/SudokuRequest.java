@@ -1,6 +1,6 @@
 package com.sudoko.solver.model;
 
-public class SudokoRequest {
+public class SudokuRequest {
     private int[][] grid;
     public int[][] getGrid(){
         return grid;

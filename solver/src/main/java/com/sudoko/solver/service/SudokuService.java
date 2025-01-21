@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SudokuService {
-    public boolean solveSudoko(int[][] grid){
+    public boolean solveSudoku(int[][] grid){
         boolean[][] row = new boolean[9][9];
         boolean[][] col = new boolean[9][9];
         boolean[][] gridTracker = new boolean[9][9];
